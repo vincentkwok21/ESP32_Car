@@ -62,17 +62,17 @@ void loop() {
     switch (button) {
       case 1:  
         Serial.print("Backward:"); Serial.println(value);
-        digitalWrite(in1, 1);
-        digitalWrite(in2, 0);
-        digitalWrite(in3, 1);
-        digitalWrite(in4, 0);
-        break;
-      case 2:  
-        Serial.print("Forward:"); Serial.println(value);
         digitalWrite(in1, 0);
         digitalWrite(in2, 1);
         digitalWrite(in3, 0);
         digitalWrite(in4, 1);
+        break;
+      case 2:  
+        Serial.print("Forward:"); Serial.println(value);
+        digitalWrite(in1, 1);
+        digitalWrite(in2, 0);
+        digitalWrite(in3, 1);
+        digitalWrite(in4, 0);
         break;
       case 3:  
         Serial.print("Still:"); Serial.println(value);
@@ -83,16 +83,16 @@ void loop() {
         break;
       case 4:  
         Serial.print("Left:"); Serial.println(value);
-        digitalWrite(in1, 1);
-        digitalWrite(in2, 1);
-        digitalWrite(in3, 0);
-        digitalWrite(in4, 1);
-        break;
-      case 5:  
-        Serial.print("Right:"); Serial.println(value);
         digitalWrite(in1, 0);
         digitalWrite(in2, 1);
         digitalWrite(in3, 1);
+        digitalWrite(in4, 0);
+        break;
+      case 5:  
+        Serial.print("Right:"); Serial.println(value);
+        digitalWrite(in1, 1);
+        digitalWrite(in2, 0);
+        digitalWrite(in3, 0);
         digitalWrite(in4, 1);
         break;
       case 6:  
